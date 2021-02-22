@@ -321,18 +321,18 @@ p{
     #icons2{
         position: absolute;
         bottom: 1em;
-        right: 6.8em;
+        right: 7.5em;
         width: 40px;
     }
     #icons3{
         position: absolute;
         bottom: 1em;
-        right: 3em;
+        right: 2em;
         width: 40px;
     }
     #right > span{
-        margin: 0 auto;
-        width: 11em;
+        margin: 0 5px 0 -15px;
+        width: 15em;
         margin-bottom: 3em;
     }
 }
