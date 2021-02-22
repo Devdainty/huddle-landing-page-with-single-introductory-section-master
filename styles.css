@@ -1,0 +1,338 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+/*general wrapper*/
+#wrapper{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-desktop.svg);
+}
+
+/*left side of the flex */
+#left{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50vw;
+}
+
+/*header section */
+header{
+    padding: 0 4em;
+    margin: -2em 0 3em 0;
+}
+img{
+    max-width: 100%;
+}
+
+/*Illustration on the left*/
+#illustration{
+    padding: 2em 2em 2em 4em;
+    width: 100%;
+}
+
+img{
+    max-width: 100%;
+}
+/*right side of the flex */
+#right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1 1 50vw;
+    color: white;
+    padding: 2em;
+    position: relative;
+}
+h2:first-of-type{
+    margin-top: 3em;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: .2em;
+}
+h2:last-of-type{
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: .4em;
+}
+p{
+    line-height: 2;
+    font-size: 1.15em;
+    margin-bottom: 1em;
+}
+#right > span{
+    display: block;
+    background-color: whitesmoke;
+    color: hsl(257, 40%, 49%);
+    padding: 1em 2em 1em 2em;
+    text-align: center;
+    width: 12em;
+    border-radius: 4em;
+    margin-bottom: 5em;
+}
+#right > span:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, .75);
+}
+#icons{
+    position: absolute;
+    bottom: -3em;
+    right: 20em;
+    width: 40px;
+}
+#icons2{
+    position: absolute;
+    bottom: -3em;
+    right: 16em;
+    width: 40px;
+}
+#icons3{
+    position: absolute;
+    bottom: -3em;
+    right: 12em;
+    width: 40px;
+}
+
+#icons:hover, #icons2:hover, #icons3:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    cursor: pointer;
+}
+/* hi-res laptops and desktops */
+@media (max-width: 1281px) and (max-width:1440px){
+    h2:first-of-type{
+        margin-top: 1em;
+    }
+    #right > span{
+        margin-bottom: 8em;
+    }
+}
+/* big landscape tablets, laptops and desktops */
+@media (max-width: 1025px){
+    header{
+        padding: 0 4em;
+        margin: -4em 0 3em 0;
+    }
+}
+
+    /* tablets, landscape ipad, lo-res laptops and desktops*/
+@media (max-width: 961px){     
+    h2{
+        font-size: 2em;
+        padding-right: .5em;
+    }
+}
+@media (max-width: 768px){
+    #wrapper{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    #left{
+        padding-top: 1em;
+        margin-bottom: -1em;
+    }
+    header{
+        padding: 0 4em;
+        margin: 1em 0 2em 0;
+    }
+    #right{
+        flex: 1;
+        width: 80%;
+    }
+    h2:first-of-type{
+        font-size: 2.4em;
+        width: 100%;
+        text-align: center;
+    }
+     h2:last-of-type{
+        font-size: 2.4em;
+        width: 100%;
+        text-align: center;
+    }
+    #right > span{
+        margin: 0 auto;
+        width: 20em;
+        margin-bottom: 4em;
+    }
+    p{
+        font-size: 1.15em;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    #icons{
+        position: absolute;
+        bottom: 2em;
+        left: 12em;
+        width: 40px;
+    }
+    #icons2{
+        position: absolute;
+        bottom: 2em;
+        right: 18em;
+        width: 40px;
+    }
+    #icons3{
+        position: absolute;
+        bottom: 2em;
+        right: 12em;
+        width: 40px;
+    }
+}
+/* portrait tablets, portrait ipad, lanscape e-readers, landscape 800x480 or 854x840 phones*/
+@media (max-width: 641px){
+    #wrapper{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    #left{
+        padding-top: 1em;
+        margin-bottom: -1em;
+    }
+    header{
+        padding: 0 4em;
+        margin: 1em 0 2em 0;
+    }
+    #right{
+        flex: 1;
+        width: 80%;
+    }
+    h2:first-of-type{
+        font-size: 2.4em;
+        width: 100%;
+        text-align: center;
+    }
+     h2:last-of-type{
+        font-size: 2.4em;
+        width: 100%;
+        text-align: center;
+    }
+    #right > span{
+        margin: 0 auto;
+        width: 20em;
+        margin-bottom: 4em;
+    }
+    p{
+        font-size: 1.15em;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    #icons{
+        padding-right: 0;
+        margin-right: 7em;
+    }
+    #icons{
+        position: absolute;
+        bottom: 2em;
+        left: 9em;
+        width: 40px;
+    }
+    #icons2{
+        position: absolute;
+        bottom: 2em;
+        right: 15em;
+        width: 40px;
+    }
+    #icons3{
+        position: absolute;
+        bottom: 2em;
+        right: 9em;
+        width: 40px;
+    }
+}
+/* portrait e-readers, smaller tablets @600 or @640 wide*/
+@media (max-width: 481px){
+    h2:first-of-type{
+        font-size: 1.8em;
+        margin-bottom: .5em;
+    }
+    h2:last-of-type{
+        font-size: 1.8em;
+    }
+    p{
+        font-size: 1.05em;
+        margin-bottom: 3em;
+    }
+    #right > span{
+        margin: 0 auto;
+        width: 16em;
+        margin-bottom: 3em;
+    }
+    #icons{
+        position: absolute;
+        bottom: 1em;
+        left: 6em;
+        width: 40px;
+    }
+    #icons2{
+        position: absolute;
+        bottom: 1em;
+        right: 11em;
+        width: 40px;
+    }
+    #icons3{
+        position: absolute;
+        bottom: 1em;
+        right: 6em;
+        width: 40px;
+    }
+}
+/* portrait e-readers, smaller tablets @600 or @640 wide*/
+@media (max-width: 375px){
+    #wrapper{
+        min-width: 300px;
+        background-image: url(images/bg-mobile.svg);
+    }
+    h2:first-of-type{
+        font-size: 19px;
+        margin-bottom: .5em;
+
+    }
+    h2:last-of-type{
+        font-size: 19px;
+        margin-bottom: .5em;
+    }
+    p{
+        font-size: 14px;
+    }
+    #icons{
+        position: absolute;
+        bottom: 1em;
+        left: 2em;
+        width: 40px;
+    }
+    #icons2{
+        position: absolute;
+        bottom: 1em;
+        right: 6.8em;
+        width: 40px;
+    }
+    #icons3{
+        position: absolute;
+        bottom: 1em;
+        right: 3em;
+        width: 40px;
+    }
+    #right > span{
+        margin: 0 auto;
+        width: 11em;
+        margin-bottom: 3em;
+    }
+}
